@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peminatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pendaftaran Peminatan</h3>
+        </div>
+        <form id="peminatanForm">
+            <label for="Nama">Nama</label>
+            <input type="text" placeholder="Masukkan Nama anda" id="Nama" name="Nama">
+
+            <label for="NIM">NIM</label>
+            <input type="text" placeholder="Masukkan NIM anda" id="NIM" name="NIM">
+
+            <p>Bidang Peminatan :</p>
+            <input type="radio" name="Peminatan" id="Programing" value="Programing">
+            <label for="Programing">Pemrograman</label><br>
+            <input type="radio" name="Peminatan" id="Jaringan" value="Jaringan">
+            <label for="Jaringan">Jaringan</label><br>
+            <input type="radio" name="Peminatan" id="Data" value="Data">
+            <label for="Data">Data</label><br>
+            <input type="radio" name="Peminatan" id="Design" value="Design">
+            <label for="Design">Design</label>
+
+            <label for="Alamat">Alamat</label>
+            <textarea name="Alamat" id="Alamat" placeholder="Masukkan Alamat Lengkap Kamu" cols="30" rows="5"></textarea>
+
+            <label for="Semester">Semester</label>
+            <select id="Semester" name="Semester">
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+                <option value="7">Semester 7</option>
+                <option value="8">Semester 8</option>
+            </select>
+
+            <label for="Angkatan">Angkatan</label>
+            <select id="Angkatan" name="Angkatan">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <label for="Tanggal">Tanggal Lahir</label>
+            <input type="date" id="Tanggal" name="Tanggal">
+
+            <button type="button" onclick="kirimData()">Kirim</button>
+        </form>
+        <div id="output"></div>
+        <script src="sript.js"></script>  
+    </div>  
+</body>
+</html>
