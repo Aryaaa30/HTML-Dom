@@ -17,7 +17,7 @@ function kirimData() {
         Alamat: ${alamat}
         Semester: ${semester}
         Angkatan: ${angkatan}
-        Tanggal Lahir: ${tanggal}
+        Tanggal: ${tanggal}
     `);
 
     const output = document.getElementById('output');
